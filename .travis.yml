@@ -13,10 +13,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
-  app: "DockerSurabhi"
+  app: "docker-surabhi"
   env: "DockerSurabhi-env"
   bucket_name: elasticbeanstalk-eu-west-2-534904142428
-  bucket_path: "DockerSurabhi"
+  bucket_path: "docker-surabhi"
   on:
     branch: master
   access_key_id: $aws_access_key
