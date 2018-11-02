@@ -9,3 +9,19 @@ before_install:
 
 script:
   -  docker run sheshar/docker-react npm run test -- --coverage
+
+http://dockersurabhi-env.kzsammqd9n.eu-west-2.elasticbeanstalk.com/
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-2"
+  app: "DockerSurabhi"
+  env: "DockerSurabhi-env"
+  bucket_name: elasticbeanstalk-eu-west-2-534904142428
+  bucket_path: "DockerSurabhi"
+  on:
+    branch: master
+  access_key_id: $aws_access_key
+  secret_access_key:
+    secure: "$aws_secret_key"
+
