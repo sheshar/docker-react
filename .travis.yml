@@ -10,8 +10,6 @@ before_install:
 script:
   -  docker run sheshar/docker-react npm run test -- --coverage
 
-http://dockersurabhi-env.kzsammqd9n.eu-west-2.elasticbeanstalk.com/
-
 deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
