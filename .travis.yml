@@ -11,7 +11,7 @@ script:
   -  docker run sheshar/docker-react npm run test -- --coverage
 
 deploy:
-  provider: elasticbeanstalk.com
+  provider: elasticbeanstalk
   region: "eu-west-2"
   app: "docker"
   env: "DockerSurabhi-env"
