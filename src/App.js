@@ -10,6 +10,8 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Hello Anagha How are you preparing?
+	    Hello Pranav Your flute was very pleasant and nice to hear! Congrats for your cricket award! 
+	    Anu how is your kath novu? 
           </p>
           <a
             className="App-link"
